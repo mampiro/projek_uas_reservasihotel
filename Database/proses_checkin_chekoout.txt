@@ -1,0 +1,60 @@
+Perlu diketahui, check in adalah proses kedatangan tamu secara resmi di hotel sekaligus memasukkan barang-barangnya ke dalam kamar. Sementara check out adalah waktu bagi wisatawan untuk melakukan proses pengeluaran barang dari dalam kamar sekaligus membayar jika wisatawan memakai minibar.
+
+Artikel ini telah tayang di Kompas.com dengan judul "Wajib Tahu, Waktu Check-In dan Check-Out di Hotel", Klik untuk baca: https://travel.kompas.com/read/2020/08/06/220000227/wajib-tahu-waktu-check-in-dan-check-out-di-hotel?page=all.
+Penulis : Nicholas Ryan Aditya
+Editor : Kahfi Dirga Cahya
+
+Download aplikasi Kompas.com untuk akses berita lebih mudah dan cepat:
+Android: https://bit.ly/3g85pkA
+iOS: https://apple.co/3hXWJ0L
+
+
+
+
+
+<div class="card-body">
+                          
+
+                          <div class="row">
+                          
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label class="control-label col-md-3">Total Bayar Rupiah </label>
+                              <div class="col-md-9"> 
+                                <input type="text" class="form-control"  name="total_bayar" id="total_bayar" value="<?=number_format($total_harga,0,",",".");?>" readonly>
+                                
+                              </div>
+                            </div>
+                          </div>
+
+                          
+                          
+                        </div>
+
+                        <div class="row">
+                          
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label class="control-label col-md-3">Uang Bayar</label>
+                              <div class="col-md-9">
+                               
+
+                               <select name="status_pembayaran" class="form-control">
+                                 
+                              
+                                <option value="0" <?php if($status_pembayaran==0){ echo "selected";}?>> Belum Bayar</option>
+
+                                <option value="1" <?php if($status_pembayaran==1){ echo "selected";}?>> Sudah Bayar</option>
+
+                               </select>
+                                
+                              </div>
+                            </div>
+                          </div>
+
+                          
+                          
+                        </div>
+                      </div>
+
+                      </div>

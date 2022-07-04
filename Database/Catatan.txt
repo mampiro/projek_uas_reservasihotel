@@ -1,0 +1,26 @@
+proses checkin (kamar terbooking tidak bisa dipinjam orang) dan checout (proses ini akan menjadikan kamar dapat dibooking)  dipindah setelah klik detail
+
+  <?php
+                                if ($status_reservasi == 0) 
+                                { 
+                                ?>
+                                    Lakukan Proses Checkin
+                                     
+                                <?php
+                                }
+                                else if ($status_reservasi == 1) 
+                                { 
+                                ?>
+                                   Sudah Checkin 
+                                   
+                                <?php
+                                }
+                                else 
+                                { 
+                                ?>
+                                  Sudah Checkout ($status_reservasi == 2)
+                                <?php
+                                }
+                                ?>
+
+
